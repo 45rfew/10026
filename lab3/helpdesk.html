@@ -12,7 +12,6 @@
     <body>
         <h1>CWA Help Deck Appointment</h1>
         <p>The help desk is located at ATC620. Open from Monday to Friday<br><br>Check the black for when CWA tutors will be there.</p>
-
         <form id = "main" method = "post" action = "https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset>
                 <legend>Student Details</legend>
@@ -27,8 +26,6 @@
                     <input type = "text" name = "last name" id = "lname" required = "required" maxlength="15" pattern="^[a-zA-Z]+$"/>                                     
                 </p>
             </fieldset>      
-
-
             <fieldset>
                 <legend>Your Unit</legend>
                 <label>
@@ -48,22 +45,18 @@
                     <option value = "Paris White">Paris White</option>
                 </select>
             </fieldset>
-            
-
             <fieldset>
                 <legend>Issue</legend>
-                <label>HTML<input type = "checkbox" name = "html issue" value = "html" checked = "checked"></label>
-                <label>CSS<input type = "checkbox" name = "css issue" value = "css"></label>
-                <label>JavaScript<input type = "checkbox" name = "js issue" value = "js"></label>
-                <label>PHP<input type = "checkbox" name = "php issue" value = "php"></label>
-                <label>MySQL<input type = "checkbox" name = "sql issue" value = "sqp"></label>
+                <label>HTML<input type = "checkbox" name = "issue[]" value = "html" checked = "checked"></label>
+                <label>CSS<input type = "checkbox" name = "issue[]" value = "css"></label>
+                <label>JavaScript<input type = "checkbox" name = "issue[]" value = "js"></label>
+                <label>PHP<input type = "checkbox" name = "issue[]" value = "php"></label>
+                <label>MySQL<input type = "checkbox" name = "issue[]" value = "sqp"></label>
                 <p>
                     <label>Description of Issue<br></label>
-                    <textarea name = "issue desc" rows = "6" cols = "40" placeholder="Write description of your issue here..."></textarea>
+                    <textarea name = "description" rows = "6" cols = "40" placeholder="Write description of your issue here..."></textarea>
                 </p>
             </fieldset>
-
-
             <fieldset>
                 <legend>Prefered Date/Time</legend>
                 <label for = "date">Date</label>
@@ -73,14 +66,10 @@
                 <input type = "text" name = "time" id = "time" placeholder="00:00" pattern="^\d{2}:\d{2}$">
 
             </fieldset>    
-            
-            
             <p>
                 <input type= "submit" value = "Book"/>
                 <input type = "reset" value = "Reset form"/>
             </p>
         </form>
-
     </body>
-
 </html>
