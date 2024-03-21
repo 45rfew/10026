@@ -41,7 +41,7 @@ nav a {
     padding: 0.2em 0.6em;
     border: 4px solid #ccc;
 }
-ol li ul li {
+ol > li > ul > li {
     list-style-type: square;
 }
 aside:hover {
