@@ -5,6 +5,8 @@ created: 22/03/2024
 last modified: [enter date]
 description: [html files it refers to (if known)]
 */
+* {font-family: sans-serif;}
+
 .main-nav li {
     float:left
 }
