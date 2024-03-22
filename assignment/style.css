@@ -8,6 +8,10 @@ description: [html files it refers to (if known)]
 * {font-family: sans-serif;}
 
 /* start of nav */
+.main-nav {
+    position: sticky;
+    top: 0;
+}
 .main-nav li {
     float:left
 }
