@@ -1,9 +1,3 @@
-/* start of nav */
-.main-nav {
-    position: sticky;
-    top: 0;
-}
-
 .main-nav li {
     float:left
 }
