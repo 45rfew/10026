@@ -7,6 +7,11 @@ description: [html files it refers to (if known)]
 */
 * {font-family: sans-serif;}
 
+/* start of nav */
+.main-nav {
+    position: sticky;
+    top: 0;
+}
 .main-nav li {
     float:left
 }
@@ -35,3 +40,30 @@ description: [html files it refers to (if known)]
 .main-nav li img {
     padding-right: 5px;
 }
+/* end of nav */
+
+/* start of footer */
+.footer {
+    background-color: #EFF0F1;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.footer a {
+    color: #3E4854;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-left,.footer-right {
+    flex-grow: 1;
+}  
+/* end of footer */
