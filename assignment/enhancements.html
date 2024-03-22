@@ -1,3 +1,36 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text and Image Side by Side</title>
+<style>
+    .container {
+        display: flex;
+        align-items: center; /* Center vertically */
+    }
+    .text {
+        flex: 1; /* Take up remaining space */
+    }
+    .image {
+        flex: 1; /* Take up remaining space */
+        text-align: right; /* Align image to right */
+    }
+    img {
+        max-width: 100%; /* Make sure image doesn't overflow its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="text">
+        <h2>Left Text</h2>
+        <p>This is some text content that will be displayed on the left side of the page.</p>
+    </div>
+    <div class="image">
+        <img src="your_image_url.jpg" alt="Image">
+    </div>
+</div>
+</body>
 </html>

@@ -7,33 +7,98 @@
             <meta name = "author" content = "F.L">
             <link rel="stylesheet" href="style.css">
             <title>FMN co</title>
-            <style>             
+            <style>   
+                * {
+                    box-sizing: border-box;
+                }
+                .index-text-container,.index-image-container {
+                    float: left;
+                    width: 50%;
+                    padding: 10px;
+                    height: 400px;
+
+                }
+                .index-container:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                    
+                }
+                .index-image-container img {
+                    width: 100%;
+                    padding-top: 30%;
+                    /* max-width: 400px; */
+                }
+                /* .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: red;
+                    color: white;
+                    text-align: center;
+                } */
+                .footer {
+                    background-color: #EFF0F1;
+                    padding: 20px 0;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                .footer-inner {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: flex;
+                }
+                .footer a {
+                    color: #3E4854;
+                    text-decoration: none;
+                    margin: 0 15px;
+                }
+
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+                .footer-left,.footer-right {
+                    flex-grow: 1;
+                }                
             </style>            
         </head>
+
         <body>
             <header>
                 <div class = "main-nav">           
                 <ul>
                     <li><img src = "logo.jpg" alt = "Logo" width = 30></li>
                     <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="jobs.html">News</a></li>
-                    <li><a href="apply.html">Contact</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="apply.html">Apply</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
                 </div>
                 <br>
             </header>
-
-            <h1>FMN Company</h1>
-            <img src = "main.jfif" alt = "Main" width = 500 class = "main-index">
-            <p>In today's fast-paced digital landscape, finding the right IT partner is crucial for businesses aiming to thrive and stay ahead of the curve. Enter FMN IT Company – your gateway to innovation, reliability, and unparalleled technological advancement.</p>
-          
-
-            <footer>
-                <div class = footer>
-                    <p>Footer</p>
+            <div class="index-container">
+                <div class="index-text-container">
+                  <h2>FMN Company</h2>
+                  <p>In today's fast-paced digital landscape, finding the right IT partner is crucial for businesses aiming to thrive and stay ahead of the curve. Enter FMN IT Company – your gateway to innovation, reliability, and unparalleled technological advancement.</p>
+                </div>
+                <div class="index-image-container">
+                    <img src = "main.jfif" alt = "Main" class = "main-index">
+                </div>
+              </div>
+            <footer class="footer">
+                <div class="footer-inner">
+                    <div class="footer-left">
+                        <a href="#">Contact</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="footer-right">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
                 </div>
             </footer>
+            
         </body>
     </html>
 </html>
