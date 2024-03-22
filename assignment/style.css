@@ -12,9 +12,11 @@ description: [html files it refers to (if known)]
     position: sticky;
     top: 0;
 }
+
 .main-nav li {
     float:left
 }
+
 .main-nav li a {
     display:block;
     color: #000;
@@ -22,6 +24,7 @@ description: [html files it refers to (if known)]
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .main-nav ul {
     list-style-type: none;
     margin: 0;
@@ -30,32 +33,43 @@ description: [html files it refers to (if known)]
     border: 1px solid #fff;
     background-color:#CAD593;
 }
+
 .main-nav li a.active {
     background-color: #A1C349;
     color:#111
 }
+
 .main-nav li a:hover:not(.active){
     background-color: rgb(196, 210, 198);
 }
+
 .main-nav li img {
     padding-right: 5px;
 }
 /* end of nav */
 
 /* start of footer */
+.content {
+    flex: 1;
+}
+
 .footer {
+    position: relative;
     background-color: #EFF0F1;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
 }
+
 .footer-inner {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
+
 .footer a {
-    color: #3E4854;
+    color: #000;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -63,7 +77,8 @@ description: [html files it refers to (if known)]
 .footer a:hover {
     text-decoration: underline;
 }
-.footer-left,.footer-right {
-    flex-grow: 1;
-}  
+
+.footer-inner table {
+    width: 100%;
+}
 /* end of footer */
