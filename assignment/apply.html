@@ -1,3 +1,112 @@
 <!DOCTYPE html>
+    <!--My Section-->
+<html lang="en">    
+    <head>
+        <meta charset = "UTF-8">
+            <meta name = "description" content = "IT company home">
+            <meta name = "keywords" content = "home, index, it, company">
+            <meta name = "author" content = "F.L">
+            <title>Job application</title>
+            <style>
+                .main-index {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;    
+                }
+            </style>  
+    </head>
+    <body>
+        <h1>Job application page</h1>
+        <form id = "main" method = "post" action = "https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset> <legend>Job reference number</legend>
+                <!--Job ref. no. info-->
+                <p>
+                <label for="Job reference number">Job reference number</label>
+                <input type="text" id="Job reference number" pattern="[0-9]{5}" required="required">
+                </p>    
+            </fieldset>
 
+            <fieldset> <legend>Personal Information</legend>
+                <!--first name, last name, date of birth, Gender info -->
+                <p>
+                <label for="firstname">First name</label>
+                <input type="text" name="First name" id="firstname" pattern="[A-Za-z]{1,20}" required="required">
+                <br><br>
+                <label for="lastname">Last name</label>
+                <input type="text" name="Last name" id="lastname" pattern="[A-Za-z]{1,20}" required="required">
+                </p>
+                <p>
+                <label for="dateofbirth">Date of birth</label>
+                <input type="date" name="Date of birth" id="dateofbirth" placeholder="dd/mm/yyyy" required="required">
+                </p>
+                <fieldset> <legend>Gender</legend>
+                    <label>
+                        <input type = "radio" name = "Gender" value = "Male" checked="checked">Male 
+                    </label>
+                    <label>
+                        <input type = "radio" name = "Gender" value = "Female">Female
+                    </label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset> <legend>Address</legend>
+                <!--Street address, suburb/town, state, postcode info-->
+                <label for="street"> Street Address </label>
+                <input type="text" id="street" pattern=".[a-zA-Z0-9]{1,40}" required="required">
+                <br><br>
+                <label for="suburb"> Suburb/town </label>
+                <input type="text" id="suburb" pattern=".[a-zA-Z]{1,40}" required="required">
+                <br><br>
+                <label for="state"> State
+                    <select name="state" id="state" required="required">
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </label>
+                <br><br>
+                <label for="postcode">Postcode
+                    <input type="text" id="postcode" pattern="[0-9]{4}" required="required">
+                </label>
+            </fieldset>
+
+            <fieldset> <legend>Contact Information</legend>
+                <!--Email, phone no. info-->
+                <label for="email">Email address</label>
+                <input type="email" id="email" required="required">
+                <br><br>
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" pattern=".[0-9]{8,12}" required="required">
+
+            </fieldset>
+
+            <fieldset> <legend>Skills</legend>
+                <!--Skill list and other skill textbox within the skill list-->
+                <!--Skills depend on the job being applied. These are placeholders.-->
+                <label>skill1<input type = "checkbox" name = "skill[]" value = "skill1" checked = "checked"></label>
+                <label>skill2<input type = "checkbox" name = "skill[]" value = "skill2" checked = "checked"></label>
+                <label>skill3<input type = "checkbox" name = "skill[]" value = "skill3" checked = "checked"></label>
+                <label>skill4<input type = "checkbox" name = "skill[]" value = "skill4" checked = "checked"></label>
+                <!--Other skill textbox here-->
+                <p><label>Other skills<br>
+                    <textarea name="otherskills" rows="4" cols="20" placeholder="textarea">
+                    </textarea>
+                </label></p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value = "Apply">
+                <input type="reset" value = "Reset form">
+            </p>
+        </form>
+    </body>
 </html>
+<!--Things to add (maybe not for this page or exclusively for this page):
+Leave site? prompt
+Mouse hover shows URL
+-->
