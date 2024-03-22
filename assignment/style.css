@@ -1,4 +1,28 @@
-h11 {
-color: orange;
-text-align: center;
+.main-nav li {
+    float:left
+}
+.main-nav li a {
+    display:block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #fff;
+    background-color:#CAD593;
+}
+.main-nav li a.active {
+    background-color: #A1C349;
+    color:#111
+}
+.main-nav li a:hover:not(.active){
+    background-color: rgb(196, 210, 198);
+}
+.main-nav li img {
+    padding-right: 5px;
 }
