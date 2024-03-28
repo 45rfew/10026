@@ -1,0 +1,69 @@
+aside:hover{
+    list-style: none;
+
+}
+
+.menu {
+    display: inline-block
+}
+
+aside {
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: lem;
+    padding: lem;
+    background: url(images/fade.jpg) repeat-x top left;
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaa;
+}
+
+header {
+    border: solid 1px darkgray;
+    margin: .5em;
+    padding: .5em;
+    background-color: darkgray;
+    text-align: center;
+}
+
+footer {
+    border-top-width: 4px;
+    border-top-color: black;
+    border-top-style: double;
+    clear: both;
+}
+
+#lists {
+    float:left;
+}
+
+#tables {
+    float: right;
+    margin: auto;
+}
+
+#hyperlinks {
+    clear:both;
+    float:left;
+}
+
+#images {
+    float: right;
+}
+
+figure {
+    border: 2px solid #ccc;
+}
+
+#lists, #images, #images, #hyperlinks {
+    width: 50%;
+    text-align: center;
+}
+
+ol, ul, dl {
+    text-align: left;
+}
+
+article {
+    min-width: 30em;
+}
